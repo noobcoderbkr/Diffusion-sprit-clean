@@ -1,0 +1,38 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+vendor/
+.pytest_cache/
+
+# Build products and executables are distributed separately
+build/
+dist/
+*.spec
+*.exe
+*.zip
+
+# Local images, logs and credentials
+/images/
+/samples/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Personal input/output files (keep intentional documentation screenshots)
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.bmp
+*.tif
+*.tiff
+!docs/images/*.png
+settings.json
+*.tmp
+
+/release/
