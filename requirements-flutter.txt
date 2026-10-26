@@ -1,0 +1,2 @@
+# The Flutter worker does not import Tkinter or tkinterdnd2.
+Pillow==12.3.0

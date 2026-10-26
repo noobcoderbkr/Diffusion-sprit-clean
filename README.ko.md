@@ -6,6 +6,17 @@ Stable Diffusion으로 만든 이미지의 원하는 부분만 기준 이미지�
 
 ![한국어 인터페이스](docs/images/interface-ko.png)
 
+## Flutter Windows UI (별도 feature 브랜치)
+
+Flutter 메인 앱에서 Python/Pillow 합성 엔진을 로컬 작업 프로세스로 실행합니다.
+이미지 열기, 영역 그리기·이동·크기 조절, 합성 미리보기, 원본 해상도 PNG 저장,
+한영 전환을 지원하며 배포본에는 Python 런타임이 포함됩니다.
+기존 v0.1.0 앱과 실행·빌드 경로는 보존했습니다.
+[실행·빌드 안내](docs/FLUTTER_WINDOWS.md), [검증 결과](docs/FLUTTER_VALIDATION.md),
+[라이선스 검토](docs/THIRD_PARTY_NOTICES.md)를 참고하세요.
+사용자 코드에는 [비상업적 사용·재배포 금지 라이선스](LICENSE)를 적용하며
+제3자 구성요소에는 각각의 라이선스가 적용됩니다.
+
 ## 주요 기능
 
 - PNG, JPEG, WebP, BMP, TIFF 열기 및 파일 드래그앤드롭

@@ -104,6 +104,17 @@ git push -u origin main
 
 Replace the account and identity placeholders with your own values. GitHub authentication happens through your Git client. This project does not include a token or configure a remote automatically. If `origin` already exists, inspect it with `git remote -v` before changing it.
 
+## Flutter Windows UI (feature branch)
+
+The Flutter main app runs the preserved Pillow algorithm in an app-managed,
+bundled local Python worker. It supports image open, region drawing/moving/
+resizing, blend preview, full-resolution PNG export, and Korean/English switching.
+The v0.1.0 Tk app remains available unchanged. See the
+[Flutter run/build guide](docs/FLUTTER_WINDOWS.md),
+[validation](docs/FLUTTER_VALIDATION.md), and
+[license inventory](docs/THIRD_PARTY_NOTICES.md).
+The project author's terms are in [LICENSE](LICENSE); third-party terms remain separate.
+
 ## Project layout
 
 ```text

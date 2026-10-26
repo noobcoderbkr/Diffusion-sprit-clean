@@ -1,0 +1,28 @@
+name: Flutter Windows
+on:
+  pull_request:
+  push:
+    branches: [feature/flutter-ui]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.8'
+          channel: stable
+          cache: true
+      - name: Test and build Flutter with bundled Python
+        shell: pwsh
+        run: ./scripts/build_flutter.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RegionCompositor-Flutter-Windows-x64
+          path: flutter_app/build/windows/x64/runner/Release/
