@@ -1,2 +1,1 @@
 Pillow==12.3.0
-tkinterdnd2>=0.4,<0.5

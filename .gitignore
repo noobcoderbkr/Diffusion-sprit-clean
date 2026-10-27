@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 .venv/
+.venv-flutter/
 venv/
 vendor/
 .pytest_cache/
@@ -32,6 +33,7 @@ Thumbs.db
 *.tif
 *.tiff
 !docs/images/*.png
+!flutter_app/assets/region_compositor.png
 settings.json
 *.tmp
 
