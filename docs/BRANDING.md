@@ -1,33 +1,32 @@
 # RegionCompositor logo
 
-The overlapping blue and indigo image layers meet in a cyan selected region,
-representing a precise patch composited into a base image. The mark contains no
-text, so Korean/English switching does not require a different logo.
+Current artwork is the user's supplied "RegionCompositor 앱 아이콘과 워드마크.png"
+(2026-10-27). It replaces the earlier overlapping-square logo.
 
-- Master transparent PNG: `flutter_app/assets/region_compositor.png` (1254 × 1254).
-- Windows ICO: `flutter_app/windows/runner/resources/app_icon.ico`.
+- Unmodified source with wordmark: docs/images/region-compositor-wordmark.png.
+- Isolated app symbol: flutter_app/assets/region_compositor.png.
+- Windows ICO: flutter_app/windows/runner/resources/app_icon.ico.
 - ICO resolutions: 16, 20, 24, 32, 40, 48, 64, 128 and 256 pixels.
-- Applied to the Flutter app bar, Windows executable/window/taskbar icon and
-  both repository README files. The original stable Python app is unchanged.
-- Rebuild ICO with `python scripts/build_app_icon.py`; the bundle build also
-  runs this conversion automatically. No generated-image service is called
-  during builds or at application runtime.
+- The app bar and Windows executable/window/taskbar use the symbol. The English
+  and Korean README files display the supplied full image with its wordmark.
+- The original stable Python app and v0.1.0 are unchanged.
 
-Created on 2026-10-27 with the built-in image generation tool. Format conversion
-to ICO uses Pillow; the transparent source artwork is retained. Project licensing
-is described in the root LICENSE; third-party components retain their own terms.
+The supplied source is retained byte-for-byte. The built-in image generation
+edit tool isolated the upper symbol and removed the background/wordmark for
+small app-icon use. Pillow only converts that asset into the multi-size ICO.
+Rebuild with python scripts/build_app_icon.py (also called by the bundle build).
+No image-generation service is used during builds or application runtime.
 
-## Generation prompt
+## Icon extraction prompt
 
-Use case: logo-brand. Create one original, polished app icon symbol for
-RegionCompositor, a Windows desktop tool that composites selected regions of
-two images. A compact, geometric mark: two slightly offset rounded square image
-layers, with a crisp smaller selected square region at their intersection
-suggesting a precisely fitted patch. Confident blue/indigo layers with one
-luminous cyan/teal selected region, harmonious with a clean light UI. Flat
-vector-like geometry, strong simple silhouette, bold forms readable at 16px;
-elegant restrained depth only through overlapping colors. Centered square
-composition, mark occupies about 85% of canvas with equal margins. Genuine
-transparent background outside the symbol. No text, no letters, no wordmark,
-no watermark, no mockup, no border surrounding the canvas, no tiny details,
-no generic mountain/photo pictogram. Single production-ready icon only.
+Edit target: supplied RegionCompositor logo sheet. Extract ONLY the existing
+upper app-icon symbol onto a genuinely transparent background, deleting all
+background, external shadow and all wordmark text. Preserve the original symbol
+exactly: overlapping tilted rounded image panels, blue mountain/moon scene on
+left, orange/purple sunset lake scene on right, white dashed selection rectangle
+with four white square handles. Do not redesign, simplify, recolor, change
+geometry, add details or alter internal artwork. Center this unchanged symbol
+in a square canvas with equal tight 6% padding, making it large and clear as a
+Windows app icon. No letters, no wordmark. Transparent outside the silhouette;
+keep white selection handles and dashes opaque. This is precise background
+extraction and isolation, not a new logo design.

@@ -1,6 +1,6 @@
 # RegionCompositor
 
-<img src="flutter_app/assets/region_compositor.png" alt="RegionCompositor 로고" width="112">
+<img src="docs/images/region-compositor-wordmark.png" alt="RegionCompositor 로고" width="360">
 
 [English](README.md) · [디자인 적용 내용](docs/DESIGN.md)
 
