@@ -493,7 +493,12 @@ class _EditorState extends State<Editor> {
               fit: StackFit.expand,
               children: [
                 CustomPaint(painter: CheckerPainter()),
-                Image.memory(preview!, fit: BoxFit.fill, gaplessPlayback: true),
+                Image.memory(
+                  preview!,
+                  key: const ValueKey('composite-preview'),
+                  fit: BoxFit.fill,
+                  gaplessPlayback: true,
+                ),
                 if (guide)
                   IgnorePointer(
                     child: CustomPaint(painter: RegionPainter(region)),
@@ -509,7 +514,19 @@ class _EditorState extends State<Editor> {
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
-      title: const Text('RegionCompositor'),
+      title: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset(
+            'assets/region_compositor.png',
+            width: 32,
+            height: 32,
+            excludeFromSemantics: true,
+          ),
+          const SizedBox(width: 10),
+          const Text('RegionCompositor'),
+        ],
+      ),
       actions: [
         DropdownButton<String>(
           value: widget.language,

@@ -11,6 +11,8 @@ try {
     $env:REGION_COMPOSITOR_PYTHON = $BuildPython
     & $BuildPython -m pip install -r requirements-flutter.txt 'pyinstaller==6.21.0'
     if ($LASTEXITCODE) { throw 'Python dependencies failed' }
+    & $BuildPython scripts/build_app_icon.py
+    if ($LASTEXITCODE) { throw 'Windows icon generation failed' }
     & $BuildPython -m unittest discover -s tests -v
     if ($LASTEXITCODE) { throw 'Python tests failed' }
     Push-Location flutter_app

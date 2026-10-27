@@ -1,5 +1,7 @@
 # RegionCompositor
 
+<img src="flutter_app/assets/region_compositor.png" alt="RegionCompositor logo" width="112">
+
 [한국어](README.ko.md) · [Design notes](docs/DESIGN.md) · [Source recovery](docs/RECOVERY.md)
 
 A small desktop tool for blending a selected area from an edited image into a base image. Use it to prepare sprites from Stable Diffusion images while keeping the rest of the base image unchanged. All image processing runs locally; no model, server, or API key is required.

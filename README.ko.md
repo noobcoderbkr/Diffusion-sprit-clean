@@ -1,5 +1,7 @@
 # RegionCompositor
 
+<img src="flutter_app/assets/region_compositor.png" alt="RegionCompositor 로고" width="112">
+
 [English](README.md) · [디자인 적용 내용](docs/DESIGN.md)
 
 Stable Diffusion으로 만든 이미지의 원하는 부분만 기준 이미지에 합성하는 데스크톱 프로그램입니다. 스프라이트를 편집할 때 나머지 영역과 원본 해상도를 유지할 수 있습니다. 이미지 처리는 모두 로컬에서 진행되며 모델이나 API 키가 필요하지 않습니다.

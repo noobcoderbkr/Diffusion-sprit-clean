@@ -64,9 +64,11 @@ void main() {
         await tester.tap(find.text('Open patch image'));
         await tester.pump();
         await finishWork();
-        expect(find.byType(Image), findsOneWidget);
+        expect(find.byKey(const ValueKey('composite-preview')), findsOneWidget);
         expect(find.textContaining('Operation failed'), findsNothing);
-        final area = tester.getRect(find.byType(Image));
+        final area = tester.getRect(
+          find.byKey(const ValueKey('composite-preview')),
+        );
         await tester.dragFrom(area.center, const Offset(30, 20));
         await tester.pump(const Duration(milliseconds: 200));
         await finishWork();
@@ -100,7 +102,7 @@ void main() {
         dialogs.input = null;
         await tester.tap(find.text('기준 이미지 열기'));
         await tester.pumpAndSettle();
-        expect(find.byType(Image), findsOneWidget);
+        expect(find.byKey(const ValueKey('composite-preview')), findsOneWidget);
       } finally {
         await tester.pumpWidget(const SizedBox.shrink());
         await tester.binding.setSurfaceSize(null);
