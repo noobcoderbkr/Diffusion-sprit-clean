@@ -10,6 +10,9 @@ Stable Diffusion으로 만든 이미지의 원하는 부분만 기준 이미지�
 
 ## Flutter Windows UI (별도 feature 브랜치)
 
+[Windows 설치용 EXE 다운로드](https://github.com/noobcoderbkr/Diffusion-sprit-clean/releases/download/v0.2.0-flutter.2/RegionCompositor-Setup-v0.2.0-flutter.2-x64.exe)
+하나로 앱·Python 엔진·필요한 런타임 DLL을 함께 설치할 수 있습니다.
+
 Flutter 메인 앱에서 Python/Pillow 합성 엔진을 로컬 작업 프로세스로 실행합니다.
 이미지 열기, 영역 그리기·이동·크기 조절, 합성 미리보기, 원본 해상도 PNG 저장,
 한영 전환을 지원하며 배포본에는 Python 런타임이 포함됩니다.

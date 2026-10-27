@@ -1,0 +1,22 @@
+RegionCompositor Windows installer
+
+The application author's terms are in LICENSE. Bundled Python/Pillow/Flutter
+and other component notices are in THIRD_PARTY_LICENSES.txt and data/flutter_assets/NOTICES.Z.
+
+The installer is built with Inno Setup 6.7.3 (unmodified).
+Copyright (C) 1997-2026 Jordan Russell.
+Portions Copyright (C) 2000-2026 Martijn Laan.
+https://jrsoftware.org/
+The full Inno Setup license is included as INNO_SETUP_LICENSE.txt.
+
+Microsoft Visual C++ runtime DLLs are distributed unmodified from the licensed
+Visual Studio x64 Redistributable CRT directory, for application-local use.
+Copyright Microsoft Corporation. All rights reserved. Their rights are governed
+by the Microsoft Software License Terms for the Visual Studio installation;
+the RegionCompositor custom license does not override those terms.
+https://learn.microsoft.com/en-us/cpp/windows/redistributing-visual-cpp-files
+
+The installer installs per user, creates an optional desktop shortcut and a
+Start menu shortcut, and registers a per-user uninstaller. It does not install
+a service, updater or global Python environment. User language settings and
+user-created images are retained when uninstalling.

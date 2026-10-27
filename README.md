@@ -108,6 +108,9 @@ Replace the account and identity placeholders with your own values. GitHub authe
 
 ## Flutter Windows UI (feature branch)
 
+Download the [single Windows installer EXE](https://github.com/noobcoderbkr/Diffusion-sprit-clean/releases/download/v0.2.0-flutter.2/RegionCompositor-Setup-v0.2.0-flutter.2-x64.exe)
+to install the complete app, Python engine and required runtime DLLs together.
+
 The Flutter main app runs the preserved Pillow algorithm in an app-managed,
 bundled local Python worker. It supports image open, region drawing/moving/
 resizing, blend preview, full-resolution PNG export, and Korean/English switching.

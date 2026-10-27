@@ -40,6 +40,36 @@ never interpolated into a shell command. For a packaged build the adjacent
 
 ## Build a distributable
 
+### Single installer EXE
+
+`RegionCompositor-Setup-v0.2.0-flutter.2-x64.exe` is the recommended download.
+It contains the complete Flutter/Python bundle, app-local Microsoft VC++ runtime
+DLLs and notices. Run it once to install; ZIP extraction or a separate Python
+installation is not required. Default location:
+`%LOCALAPPDATA%/Programs/RegionCompositor`. It creates a Start menu shortcut,
+offers a desktop shortcut, and supports removal through Windows Installed Apps.
+Installation is per user. User image files and language preferences are retained.
+
+To package a previously checked Release folder, use the official Inno Setup
+6.7.3 compiler and the x64 CRT folder from your licensed Visual Studio installation:
+
+```powershell
+.\scripts\build_installer.ps1 -Iscc 'C:\tools\inno\ISCC.exe' `
+  -CrtDirectory 'C:\path\to\VC\Redist\MSVC\VERSION\x64\Microsoft.VC145.CRT'
+```
+
+The script includes the compiler's original license and writes a SHA-256 checksum.
+It does not download tools or change machine settings. The setup was validated
+with a temporary installation: all 84 bundle files matched their source hashes,
+the local runtime/notices were present, the installed Python worker processed an
+image, the Flutter app launched, and uninstall completed. A fresh Windows VM
+has not been tested. The installer is not code-signed.
+
+References: [Inno Setup](https://jrsoftware.org/isinfo.php),
+[Microsoft app-local runtime deployment](https://learn.microsoft.com/en-us/cpp/windows/determining-which-dlls-to-redistribute).
+
+### Portable ZIP / release folder
+
 ```powershell
 .\scripts\build_flutter.ps1
 ```
