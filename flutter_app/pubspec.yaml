@@ -1,7 +1,7 @@
 name: region_compositor
 description: Local bilingual RegionCompositor desktop UI.
 publish_to: none
-version: 0.2.0+2
+version: 0.2.1+1
 environment:
   sdk: '>=3.11.0 <4.0.0'
 dependencies:

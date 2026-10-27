@@ -14,8 +14,8 @@
 [Setup]
 AppId={{8C870A93-47D8-46C4-B4A2-BD776D317CCC}
 AppName=RegionCompositor
-AppVersion=0.2.0 Preview 2
-AppVerName=RegionCompositor 0.2.0 Preview 2
+AppVersion=0.2.1
+AppVerName=RegionCompositor 0.2.1
 AppPublisher=noobcoderbkr
 AppPublisherURL=https://github.com/noobcoderbkr/Diffusion-sprit-clean
 AppSupportURL=https://github.com/noobcoderbkr/Diffusion-sprit-clean/issues
@@ -26,7 +26,7 @@ ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 MinVersion=10.0.17763
 OutputDir={#OutputDir}
-OutputBaseFilename=RegionCompositor-Setup-v0.2.0-flutter.2-x64
+OutputBaseFilename=RegionCompositor-Setup-v0.2.1-x64
 SetupIconFile=..\flutter_app\windows\runner\resources\app_icon.ico
 UninstallDisplayIcon={app}\region_compositor.exe
 LicenseFile=..\LICENSE
@@ -36,7 +36,7 @@ WizardStyle=modern
 DisableProgramGroupPage=yes
 CloseApplications=yes
 RestartApplications=no
-VersionInfoVersion=0.2.0.2
+VersionInfoVersion=0.2.1.1
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"

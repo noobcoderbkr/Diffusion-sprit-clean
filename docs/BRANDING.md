@@ -9,7 +9,7 @@ Current artwork is the user's supplied "RegionCompositor 앱 아이콘과 워드
 - ICO resolutions: 16, 20, 24, 32, 40, 48, 64, 128 and 256 pixels.
 - The app bar and Windows executable/window/taskbar use the symbol. The English
   and Korean README files display the supplied full image with its wordmark.
-- The original stable Python app and v0.1.0 are unchanged.
+- Flutter is the main application; the historical Python UI has been removed.
 
 The supplied source is retained byte-for-byte. The built-in image generation
 edit tool isolated the upper symbol and removed the background/wordmark for

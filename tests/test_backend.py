@@ -1,3 +1,4 @@
+import hashlib
 import io
 import json
 from pathlib import Path
@@ -9,21 +10,18 @@ import unittest
 from PIL import Image
 from backend.engine import Compositor
 from backend.worker import dispatch
-from test_compositing import legacy_app
 
 
 class BackendTests(unittest.TestCase):
     def test_pixel_parity_with_stable_engine(self):
         base = Image.new('RGBA', (83, 61), (20, 40, 60, 255))
         patch = Image.new('RGBA', (161, 123), (220, 100, 80, 180))
-        for rect in ([.25, .25, .5, .5], [0, 0, 1, 1], [.99, .99, .01, .01]):
-            for opacity, feather, edge in [(100, 0, False), (36, 24, True), (0, 200, True)]:
-                for mode in ('base', 'patch', 'composite'):
-                    old = legacy_app(base, patch, opacity, feather)
-                    old.rect = rect
-                    old.edge_match.value = edge
-                    new = Compositor(base, patch, rect, opacity, feather, edge)
-                    self.assertEqual(new.compose(mode).tobytes(), old.compose(mode).tobytes())
+        cases = json.loads((Path(__file__).parent / 'compositing_baselines.json').read_text())
+        self.assertEqual(len(cases), 27)
+        for case in cases:
+            with self.subTest(case=case):
+                new = Compositor(base, patch, case['rect'], case['opacity'], case['feather'], case['edge'])
+                self.assertEqual(hashlib.sha256(new.compose(case['mode']).tobytes()).hexdigest(), case['sha256'])
 
     def test_protocol_and_full_resolution_save(self):
         with tempfile.TemporaryDirectory() as folder:

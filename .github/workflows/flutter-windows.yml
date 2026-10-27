@@ -2,7 +2,7 @@ name: Flutter Windows
 on:
   pull_request:
   push:
-    branches: [feature/flutter-ui]
+    branches: [main, feature/flutter-ui]
   workflow_dispatch:
 permissions:
   contents: read

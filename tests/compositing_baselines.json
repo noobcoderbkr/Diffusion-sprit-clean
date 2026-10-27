@@ -1,0 +1,353 @@
+[
+  {
+    "rect": [
+      0.25,
+      0.25,
+      0.5,
+      0.5
+    ],
+    "opacity": 100,
+    "feather": 0,
+    "edge": false,
+    "mode": "base",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0.25,
+      0.25,
+      0.5,
+      0.5
+    ],
+    "opacity": 100,
+    "feather": 0,
+    "edge": false,
+    "mode": "patch",
+    "sha256": "54c658acda8f39b1e199940dd5dc9fd70b7f6f58b99dfba7fcec8bd8305d3bfb"
+  },
+  {
+    "rect": [
+      0.25,
+      0.25,
+      0.5,
+      0.5
+    ],
+    "opacity": 100,
+    "feather": 0,
+    "edge": false,
+    "mode": "composite",
+    "sha256": "92ae85252757d7d6cbe6720e8ac9ce342aa81155875009301eaa4941a73a7dc2"
+  },
+  {
+    "rect": [
+      0.25,
+      0.25,
+      0.5,
+      0.5
+    ],
+    "opacity": 36,
+    "feather": 24,
+    "edge": true,
+    "mode": "base",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0.25,
+      0.25,
+      0.5,
+      0.5
+    ],
+    "opacity": 36,
+    "feather": 24,
+    "edge": true,
+    "mode": "patch",
+    "sha256": "54c658acda8f39b1e199940dd5dc9fd70b7f6f58b99dfba7fcec8bd8305d3bfb"
+  },
+  {
+    "rect": [
+      0.25,
+      0.25,
+      0.5,
+      0.5
+    ],
+    "opacity": 36,
+    "feather": 24,
+    "edge": true,
+    "mode": "composite",
+    "sha256": "a94b576ccd8ce00e6adf22a0dad933ff4d369eee0693554eea6b261f3a0a7ceb"
+  },
+  {
+    "rect": [
+      0.25,
+      0.25,
+      0.5,
+      0.5
+    ],
+    "opacity": 0,
+    "feather": 200,
+    "edge": true,
+    "mode": "base",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0.25,
+      0.25,
+      0.5,
+      0.5
+    ],
+    "opacity": 0,
+    "feather": 200,
+    "edge": true,
+    "mode": "patch",
+    "sha256": "54c658acda8f39b1e199940dd5dc9fd70b7f6f58b99dfba7fcec8bd8305d3bfb"
+  },
+  {
+    "rect": [
+      0.25,
+      0.25,
+      0.5,
+      0.5
+    ],
+    "opacity": 0,
+    "feather": 200,
+    "edge": true,
+    "mode": "composite",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "opacity": 100,
+    "feather": 0,
+    "edge": false,
+    "mode": "base",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "opacity": 100,
+    "feather": 0,
+    "edge": false,
+    "mode": "patch",
+    "sha256": "54c658acda8f39b1e199940dd5dc9fd70b7f6f58b99dfba7fcec8bd8305d3bfb"
+  },
+  {
+    "rect": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "opacity": 100,
+    "feather": 0,
+    "edge": false,
+    "mode": "composite",
+    "sha256": "2d9076316b85e8f71f11400be7ce043715cd5ed71f561335e27175951f9fa02f"
+  },
+  {
+    "rect": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "opacity": 36,
+    "feather": 24,
+    "edge": true,
+    "mode": "base",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "opacity": 36,
+    "feather": 24,
+    "edge": true,
+    "mode": "patch",
+    "sha256": "54c658acda8f39b1e199940dd5dc9fd70b7f6f58b99dfba7fcec8bd8305d3bfb"
+  },
+  {
+    "rect": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "opacity": 36,
+    "feather": 24,
+    "edge": true,
+    "mode": "composite",
+    "sha256": "61c6051f603429be4a2ef90b13ef2a150def1df505336883f48b0b2102f3d226"
+  },
+  {
+    "rect": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "opacity": 0,
+    "feather": 200,
+    "edge": true,
+    "mode": "base",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "opacity": 0,
+    "feather": 200,
+    "edge": true,
+    "mode": "patch",
+    "sha256": "54c658acda8f39b1e199940dd5dc9fd70b7f6f58b99dfba7fcec8bd8305d3bfb"
+  },
+  {
+    "rect": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "opacity": 0,
+    "feather": 200,
+    "edge": true,
+    "mode": "composite",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0.99,
+      0.99,
+      0.01,
+      0.01
+    ],
+    "opacity": 100,
+    "feather": 0,
+    "edge": false,
+    "mode": "base",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0.99,
+      0.99,
+      0.01,
+      0.01
+    ],
+    "opacity": 100,
+    "feather": 0,
+    "edge": false,
+    "mode": "patch",
+    "sha256": "54c658acda8f39b1e199940dd5dc9fd70b7f6f58b99dfba7fcec8bd8305d3bfb"
+  },
+  {
+    "rect": [
+      0.99,
+      0.99,
+      0.01,
+      0.01
+    ],
+    "opacity": 100,
+    "feather": 0,
+    "edge": false,
+    "mode": "composite",
+    "sha256": "8358e71154a807872dd33d606166b08218ab254fc66b067e0e5f68a49fb4f099"
+  },
+  {
+    "rect": [
+      0.99,
+      0.99,
+      0.01,
+      0.01
+    ],
+    "opacity": 36,
+    "feather": 24,
+    "edge": true,
+    "mode": "base",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0.99,
+      0.99,
+      0.01,
+      0.01
+    ],
+    "opacity": 36,
+    "feather": 24,
+    "edge": true,
+    "mode": "patch",
+    "sha256": "54c658acda8f39b1e199940dd5dc9fd70b7f6f58b99dfba7fcec8bd8305d3bfb"
+  },
+  {
+    "rect": [
+      0.99,
+      0.99,
+      0.01,
+      0.01
+    ],
+    "opacity": 36,
+    "feather": 24,
+    "edge": true,
+    "mode": "composite",
+    "sha256": "1e194a6ac383a4d7c515ebb6c3d446b8f51d3540d3f55ac3591a5eb43bc0d179"
+  },
+  {
+    "rect": [
+      0.99,
+      0.99,
+      0.01,
+      0.01
+    ],
+    "opacity": 0,
+    "feather": 200,
+    "edge": true,
+    "mode": "base",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  },
+  {
+    "rect": [
+      0.99,
+      0.99,
+      0.01,
+      0.01
+    ],
+    "opacity": 0,
+    "feather": 200,
+    "edge": true,
+    "mode": "patch",
+    "sha256": "54c658acda8f39b1e199940dd5dc9fd70b7f6f58b99dfba7fcec8bd8305d3bfb"
+  },
+  {
+    "rect": [
+      0.99,
+      0.99,
+      0.01,
+      0.01
+    ],
+    "opacity": 0,
+    "feather": 200,
+    "edge": true,
+    "mode": "composite",
+    "sha256": "e3a8150bbc4dcca7a71ab888e0002be577a0fb08118c322e00717356edf2fe4c"
+  }
+]

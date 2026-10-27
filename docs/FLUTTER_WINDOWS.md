@@ -1,6 +1,6 @@
 # Flutter Windows UI / Flutter 윈도우 UI
 
-This branch adds a Flutter main app with an app-managed local Python worker.
+The project provides a Flutter main app with an app-managed local Python worker.
 The worker runs in a separate OS process, not inside the Dart VM. It is bundled
 with the app for distribution: users do not need a Python installation, server,
 or network connection. No model/AI feature is introduced by this migration.
@@ -42,7 +42,7 @@ never interpolated into a shell command. For a packaged build the adjacent
 
 ### Single installer EXE
 
-`RegionCompositor-Setup-v0.2.0-flutter.2-x64.exe` is the recommended download.
+`RegionCompositor-Setup-v0.2.1-x64.exe` is the recommended download.
 It contains the complete Flutter/Python bundle, app-local Microsoft VC++ runtime
 DLLs and notices. Run it once to install; ZIP extraction or a separate Python
 installation is not required. Default location:
@@ -82,7 +82,7 @@ The script fails on any failed check. Output:
 Ship that **whole folder**, including `engine/`, `data/`, DLLs and license files.
 Launching only the exe after copying it elsewhere will not work. The Microsoft
 Visual C++ runtime may be required on a clean Windows installation. This build
-is not code-signed and has no installer or auto-updater.
+is not code-signed. A separate installer is available; no auto-updater is included.
 
 ## Editing workflow
 
@@ -104,12 +104,11 @@ is not code-signed and has no installer or auto-updater.
 
 ## Engine and protocol
 
-The stable `region_compositor.py`, `compositor_app.py`, `ui_support.py` and
-`versions/` are unchanged. `backend/engine.py` copies the original seven pure
-Pillow methods verbatim from ff7de566, avoiding Tk imports in the worker.
-Parity tests compare pixels against the preserved implementation. Selection
-uses the same relative crop in both images, rather than stretching the whole
-patch into the rectangle.
+Flutter is the sole desktop UI. The headless `backend/engine.py` retains the
+original seven pure Pillow compositing methods from ff7de566. Regression tests
+use 27 SHA-256 pixel baselines captured from the original implementation before
+its UI was removed. Neither the engine nor its tests import Tkinter.
+Selection uses the same relative crop in both images.
 
 `python -u -m backend.worker` reads UTF-8 JSON lines on stdin and replies on
 stdout with matching `id`, `ok`, and `result` or `error`. Commands: `inspect`,
@@ -125,14 +124,13 @@ A three-minute timeout kills a stuck worker. Closing the editor terminates it.
 Future model tasks should define explicit commands and independently review
 model licenses, resource use and cancellation needs.
 
-## Scope and recovery
+## Scope
 
-Flutter is an additional entry point. `python region_compositor.py` and the
-original build script remain available. `v0.1.0` stays at ff7de566; no release
-asset is replaced. The PR targets main but is left unmerged for review.
-There is no zoom/pan, aspect lock, drag-and-drop file import, JPEG export or
-pixel nudge shortcut in this initial Flutter UI. These legacy features remain
-available in the Tk app. Windows x64 is the only configured Flutter target.
+Flutter is the default and only supported UI. Use root run.bat for development,
+build.ps1 for the checked Windows bundle, and scripts/build_installer.ps1 to
+create the single installer EXE. The Python backend is retained for compositing.
+Historical desktop UIs and their dependencies have been removed from the source
+tree. Windows x64 is the only configured target. Zoom/pan, aspect lock,
+drag-and-drop import, JPEG export and pixel-nudge shortcuts are not implemented.
 
-See [licensing review](THIRD_PARTY_NOTICES.md) and
-[validation results](FLUTTER_VALIDATION.md).
+See [licensing](THIRD_PARTY_NOTICES.md) and [validation](FLUTTER_VALIDATION.md).

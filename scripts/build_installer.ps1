@@ -25,7 +25,7 @@ $OutputDirectory = (Resolve-Path -LiteralPath $OutputDirectory).Path
     "/DCompilerLicense=$CompilerLicense" "/DOutputDir=$OutputDirectory" `
     (Join-Path $RepoRoot 'packaging/windows-installer.iss')
 if ($LASTEXITCODE) { throw 'Installer compilation failed' }
-$SetupFile = Join-Path $OutputDirectory 'RegionCompositor-Setup-v0.2.0-flutter.2-x64.exe'
+$SetupFile = Join-Path $OutputDirectory 'RegionCompositor-Setup-v0.2.1-x64.exe'
 $Digest = (Get-FileHash -LiteralPath $SetupFile -Algorithm SHA256).Hash.ToLowerInvariant()
 "$Digest  $([IO.Path]::GetFileName($SetupFile))" | Set-Content -Encoding ascii (Join-Path $OutputDirectory 'SHA256SUMS-Setup.txt')
 Write-Host "Installer ready: $SetupFile"

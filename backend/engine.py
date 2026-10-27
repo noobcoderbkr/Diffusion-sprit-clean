@@ -1,7 +1,7 @@
-"""Pillow-only copy of the v0.1.0 algorithm; legacy files remain unchanged.
+"""Headless Pillow compositor, retained from ff7de566.
 
-Methods copied verbatim from versions/legacy_compositor.py at ff7de566.
-Parity is checked against that implementation in tests/test_backend.py.
+The original desktop UI was removed. Pixel-output regression baselines are
+stored in tests/compositing_baselines.json, captured before UI removal.
 """
 from PIL import Image, ImageChops, ImageDraw, ImageStat
 from types import SimpleNamespace
