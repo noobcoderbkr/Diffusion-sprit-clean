@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased — Faster previews
+## 0.2.2 — Faster previews
 
 - Reuse decoded preview inputs within a 128 MiB pixel cache and reload changed files.
 - Encode preview PNGs with lighter lossless compression and avoid a redundant full-size copy.
