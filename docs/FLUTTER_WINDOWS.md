@@ -42,7 +42,7 @@ never interpolated into a shell command. For a packaged build the adjacent
 
 ### Single installer EXE
 
-`RegionCompositor-Setup-v0.2.1-x64.exe` is the recommended download.
+`RegionCompositor-Setup-v0.2.2-x64.exe` is the recommended download.
 It contains the complete Flutter/Python bundle, app-local Microsoft VC++ runtime
 DLLs and notices. Run it once to install; ZIP extraction or a separate Python
 installation is not required. Default location:
@@ -59,7 +59,7 @@ To package a previously checked Release folder, use the official Inno Setup
 ```
 
 The script includes the compiler's original license and writes a SHA-256 checksum.
-It does not download tools or change machine settings. The setup was validated
+It does not download tools or change machine settings. The 0.2.1 setup was validated
 with a temporary installation: all 84 bundle files matched their source hashes,
 the local runtime/notices were present, the installed Python worker processed an
 image, the Flutter app launched, and uninstall completed. A fresh Windows VM
@@ -115,8 +115,8 @@ stdout with matching `id`, `ok`, and `result` or `error`. Commands: `inspect`,
 `preview`, `save`. Only one preview is in flight; newer edits trigger another
 after it completes. Previews are limited to 1600px on the longest side; saving
 uses the original resolution. Input images above 40 million pixels are rejected.
-There are no sockets, upload endpoints or telemetry. Images are reopened for
-each operation, so input files should not be externally modified during editing.
+There are no sockets, upload endpoints or telemetry. Previews reuse decoded
+inputs while file signatures match. Full-resolution export reads inputs again.
 
 Errors stay in the UI, with localized context and Python diagnostic details.
 Worker termination fails pending requests; subsequent requests restart it.
