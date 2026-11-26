@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — Faster previews
+
+- Reuse decoded preview inputs within a 128 MiB pixel cache and reload changed files.
+- Encode preview PNGs with lighter lossless compression and avoid a redundant full-size copy.
+- Preserve full-resolution export, which still reads the source files directly.
+
 ## 0.2.1 — Flutter main application
 
 - Flutter is the only desktop UI and the default run/build path.

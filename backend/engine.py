@@ -25,9 +25,9 @@ class Compositor:
     def compose(self, mode: str = "composite") -> Image.Image | None:
         if not self.base:
             return None
-        base = self.base.image.copy()
+        base = self.base.image
         if mode == "base" or not self.patch:
-            return base
+            return base.copy()
 
         if mode == "patch":
             return self.patch.image.resize(base.size, RESAMPLE)
